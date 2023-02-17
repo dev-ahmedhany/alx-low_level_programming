@@ -227,7 +227,7 @@ julien@ubuntu:~/0x01$ ./100-print_comb3
 julien@ubuntu:~/0x01$ 
 ```
 
-## 11. The success combination in business is: Do what you do better... and: do more of what you do...
+## 11. The success combination in business is: Do what you do better... and: do more of what you do
 
 Write a program that prints all possible different combinations of three digits.
 
