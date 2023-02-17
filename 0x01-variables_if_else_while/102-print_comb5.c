@@ -17,18 +17,18 @@ int main(void)
 			{
 				for (l = 0; l < 10; l++)
 				{
-					if (k > i || (k >= i && l > j))
+					if (!(k > i || (k >= i && l > j)))
+						continue;
+
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(' ');
+					putchar(k + '0');
+					putchar(l + '0');
+					if (i < 9 || j < 8)
 					{
-						putchar(i + '0');
-						putchar(j + '0');
+						putchar(',');
 						putchar(' ');
-						putchar(k + '0');
-						putchar(l + '0');
-						if (i < 9 || j < 8)
-						{
-							putchar(',');
-							putchar(' ');
-						}
 					}
 				}
 			}
