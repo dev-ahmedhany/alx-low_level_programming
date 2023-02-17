@@ -15,17 +15,20 @@ int main(void)
     {
       for (k = i; k < 10; k++)
       {
-        for (l = j + 1; l < 10; l++)
+        for (l = 0; l < 10; l++)
         {
-          putchar(i + '0');
-          putchar(j + '0');
-          putchar(' ');
-          putchar(k + '0');
-          putchar(l + '0');
-          if (i < 9 || j < 8)
+          if (k > i || (k >= i && l > j))
           {
-            putchar(',');
+            putchar(i + '0');
+            putchar(j + '0');
             putchar(' ');
+            putchar(k + '0');
+            putchar(l + '0');
+            if (i < 9 || j < 8)
+            {
+              putchar(',');
+              putchar(' ');
+            }
           }
         }
       }
