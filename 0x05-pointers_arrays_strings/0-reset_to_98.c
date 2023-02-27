@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-* _isdigit - write a function that check for a digit (0 through 9).
-* @c: char to check
-* Return:  0 or 1
+ * reset_to_98 - takes a pointer to an int as parameter and updates the value
+ * it points to to 98
+ * @n: pointer to an int
+ * Return: void
 **/
 void reset_to_98(int *n)
 {
