@@ -288,3 +288,38 @@ julien@ubuntu:~/0x05$ ./8-print_array
 98, 402, -198, 298, -1024
 julien@ubuntu:~/0x05$
 ```
+
+## 9. strcpy
+
+Prototype: `char *_strcpy(char *dest, char *src);`
+Write a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
+
+Return value: the pointer to dest
+FYI: The standard library provides a similar function: strcpy. Run man strcpy to learn more.
+
+```bash
+julien@ubuntu:~/0x05$ cat 9-main.c
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char s1[98];
+    char *ptr;
+
+    ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
+    printf("%s", s1);
+    printf("%s", ptr);
+    return (0);
+}
+julien@ubuntu:~/0x05$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-main.c 9-strcpy.c -o 9-strcpy
+julien@ubuntu:~/0x05$ ./9-strcpy 
+First, solve the problem. Then, write the code
+First, solve the problem. Then, write the code
+julien@ubuntu:~/0x05$ 
+```
