@@ -159,3 +159,35 @@ julien@ubuntu:~/0x05$ ./4-print_rev
 vomisA caasI - meht fo kcal eht raef I .sretupmoc raef ton od I
 julien@ubuntu:~/0x05$ 
 ```
+
+## 5. A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes
+
+Write a function that reverses a string.
+
+Prototype: `void rev_string(char *s);`
+
+```bash
+julien@ubuntu:~/0x05$ cat 5-main.c
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char s[10] = "My School";
+
+    printf("%s\n", s);
+    rev_string(s);
+    printf("%s\n", s);
+    return (0);
+}
+julien@ubuntu:~/0x05$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-rev_string.c -o 5-rev_string
+julien@ubuntu:~/0x05$ ./5-rev_string 
+My School
+loohcS yM
+julien@ubuntu:~/0x05$ 
+```
