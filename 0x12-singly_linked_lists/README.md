@@ -376,3 +376,18 @@ I bore my house upon my back!
 (A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)
 julien@ubuntu:~/$
 ```
+
+## 6. Real programmers can write assembly code in any language
+
+Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line.
+
+You are only allowed to use the printf function
+You are not allowed to use interrupts
+Your program will be compiled using nasm and gcc:
+
+```bash
+julien@ubuntu:~/$ nasm -f elf64 101-hello_holberton.asm && gcc -no-pie -std=gnu89 101-hello_holberton.o -o hello
+julien@ubuntu:~/$ ./hello 
+Hello, Holberton
+julien@ubuntu:~/$ 
+```
