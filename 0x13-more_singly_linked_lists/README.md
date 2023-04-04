@@ -10,7 +10,7 @@ Format: see example
 You are allowed to use printf
 
 ```bash
-julien@ubuntu:~/0x13. More singly linked lists$ cat 0-main.c 
+julien@ubuntu:~/0x13. More singly linked lists$ cat 0-main.c
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -18,7 +18,7 @@ julien@ubuntu:~/0x13. More singly linked lists$ cat 0-main.c
 
 /**
  * main - check the code
- * 
+ *
  * Return: Always 0.
  */
 int main(void)
@@ -44,9 +44,9 @@ int main(void)
     return (0);
 }
 julien@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_listint.c -o a
-julien@ubuntu:~/0x13. More singly linked lists$ ./a 
+julien@ubuntu:~/0x13. More singly linked lists$ ./a
 9
 8
 -> 2 elements
-julien@ubuntu:~/0x13. More singly linked lists$ 
+julien@ubuntu:~/0x13. More singly linked lists$
 ```
