@@ -58,7 +58,7 @@ Write a function that returns the number of elements in a linked listint_t list.
 Prototype: size_t listint_len(const listint_t *h);
 
 ```bash
-julien@ubuntu:~/0x13. More singly linked lists$ cat 1-main.c 
+julien@ubuntu:~/0x13. More singly linked lists$ cat 1-main.c
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -92,9 +92,9 @@ int main(void)
     return (0);
 }
 julien@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-listint_len.c -o b
-julien@ubuntu:~/0x13. More singly linked lists$ ./b 
+julien@ubuntu:~/0x13. More singly linked lists$ ./b
 -> 2 elements
-julien@ubuntu:~/0x13. More singly linked lists$ 
+julien@ubuntu:~/0x13. More singly linked lists$
 ```
 
 ## 2. Add node
@@ -105,7 +105,7 @@ Prototype: listint_t *add_nodeint(listint_t **head, const int n);
 Return: the address of the new element, or NULL if it failed
 
 ```bash
-julien@ubuntu:~/0x13. More singly linked lists$ cat 2-main.c 
+julien@ubuntu:~/0x13. More singly linked lists$ cat 2-main.c
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -133,7 +133,7 @@ int main(void)
     return (0);
 }
 julien@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_nodeint.c 0-print_listint.c -o c
-julien@ubuntu:~/0x13. More singly linked lists$ ./c 
+julien@ubuntu:~/0x13. More singly linked lists$ ./c
 1024
 402
 98
@@ -142,5 +142,5 @@ julien@ubuntu:~/0x13. More singly linked lists$ ./c
 2
 1
 0
-julien@ubuntu:~/0x13. More singly linked lists$ 
+julien@ubuntu:~/0x13. More singly linked lists$
 ```
